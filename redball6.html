@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Redball Zero One</title>
+				<script>
+				function sayhello()
+				{
+					alert("Hi Aerial");
+				}
+				function moveleft()
+				{
+					redball.left=redball.left-30;
+				}
+				function moveright()
+				{
+					redball.left=redball.left+30;
+				}
+				function moveup()
+				{
+					redball.top=redball.top-30;
+				}
+				function movedown()
+				{
+					redball.top=redball.top+30;
+				}
+				function movediagdownright()
+				{
+					redball.top=redball.top+30;
+						redball.left=redball.left+30;
+				}
+				function movediagdownleft()
+				{
+					redball.top=redball.top+30;
+						redball.left=redball.left-30;
+				}
+				function movediagupleft()
+				{
+					redball.top=redball.top-30;
+						redball.left=redball.left-30;
+				}
+				function movediagupright()
+				{
+					redball.top=redball.top-30;
+						redball.left=redball.left+30;
+				}
+				function movesquare()
+				{
+				for (i = 0; i < 8; i++) { 
+    			redball.top=redball.top-40;
+    			}
+    			for (i = 0; i < 8; i++) {
+				redball.left=redball.left+40;
+				}
+				for (i = 0; i < 8; i++) {
+				redball.top=redball.top+40
+				}
+				for (i = 0; i < 8; i++) {
+				redball.left=redball.left-40;
+				}
+
+				}
+				function movetriangle()
+				{
+				for (i = 0; i < 8; i++)
+				{
+						movedown();
+				}
+				for (i = 0; i < 8; i++) 
+				{
+					moveleft();
+				}
+				for (i = 0; i < 8; i++) 
+				{
+					movediagupright();
+				}
+			}
+				function octagon()
+				{
+					for(i = 0; i < 5; i++)
+					{
+						moveright();
+					}
+					for(i = 0; i < 5; i++)
+					{
+						movediagdownright();
+					}
+					for(i = 0; i < 5; i++)
+					{
+						movedown();
+					}
+					for(i = 0; i < 5; i++)
+					{
+						movediagdownleft();
+					}
+					for(i = 0; i < 5; i++)
+					{
+						moveleft();
+					}
+					for(i = 0; i < 5; i++)
+					{
+						movediagupleft();
+					}
+					for(i = 0; i < 5; i++)
+					{
+						moveup();
+					}
+					for(i = 0; i < 5; i++)
+					{
+						movediagupright();
+					}
+				}
+				function moveX()
+				{
+					for (i = 0; i < 8; i++)
+					{
+						movediagupright();
+					} 
+					for (i = 0; i < 8; i++) 
+					{
+						movediagdownleft();
+					}
+					for (i = 0; i < 8; i++) 
+					{
+						movediagdownright();
+					}
+					for (i = 0; i < 8; i++) 
+					{
+						movediagupleft();
+					}
+					for (i = 0; i < 8; i++) 
+					{
+						movediagdownleft();
+					}
+					for (i = 0; i < 8; i++) 
+					{
+						movediagupright();
+					}
+					for (i = 0; i < 8; i++) 
+					{
+						movediagupleft();
+					}
+					for (i = 0; i < 8; i++) 
+					{
+						movediagdownright()
+					}
+
+				}
+				</script>
+				<script src="http://lrn.icstars.org/redball.js"></script>
+		</head>
+			<body>
+				Hello World!
+				<table border="2px;" align= "center">
+				<tr>
+				<td><button id="movediagupleft();">Move Diagupleft</button></td>
+				<td><button id="moveleft();">Move Left</button></td>
+				<td><button id="movediagdownleft();">Move DiagDownleft</button></td>
+				<td><button id="movesquare();">Move Square</button></td>
+				<td><button id="movetriangle();">Move Triangle</button></td>
+				<td><button id="octagon();">Move Octagon</button></td>
+				</tr>
+				<tr>
+				<td><button id="moveup();">Move Up</button></td>
+				<td><button id="sayhello();">Aerial's Button</button></td>
+				<td><button id="movedown();">Move Down</button></td>
+				<td><button id="moveX();">Move X</button></td>
+				</tr>
+						<img id="redball" src="redball.jpg"/>
+				<tr>
+				<td><button id="movediagupright();">Move Diagupright</button></td>
+				<td><button id="moveright();">Move Right</button></td>
+				<td><button id="movediagdownright();">Move DiagDownright</button></td>
+				</tr>
+
+				</table>
+			</body>
+
+	</html>

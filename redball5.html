@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<style type="text/css">
+#redball{
+
+	position: absolute;6
+}
+	</style>
+	<title>Redball5</title>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script>
+	$( document ).ready(function() {
+    console.log( "ready!" );
+	$("#redball").fadeOut();
+	$("#redball").fadeIn();
+	$("#redball").animate({ "left": "-=50px" }, "slow" );
+	$("#redball").animate({ "left": "+=50px" }, "slow" );
+});
+		</script>
+	</head>
+	<body>
+		<table border="2px;" align= "center">
+				<tr>
+				<td><button id="movediagupleft">Move Diagupleft</button></td>
+				<td><button id="moveleft">Move Left</button></td>
+				<td><button id="movediagdownleft">Move DiagDownleft</button></td>
+				<td><button id="movesquare">Move Square</button></td>
+				<td><button id="movetriangle">Move Triangle</button></td>
+				<td><button id="octagon">Move Octagon</button></td>
+				</tr>
+				<tr>
+				<td><button id="moveup">Move Up</button></td>
+				<td><button id="sayhello">Aerial's Button</button></td>
+				<td><button id="movedown">Move Down</button></td>
+				<td><button id="moveX">Move X</button></td>
+				</tr>
+				<tr>
+				<td><button id="movediagupright">Move Diagupright</button></td>
+				<td><button id="moveright">Move Right</button></td>
+				<td><button id="movediagdownright">Move DiagDownright</button></td>
+				</tr>
+
+				</table>
+			<script>
+				$("#moveleft").click(function() {
+
+				$("#redball").animate({ "left": "-=50px" }, "slow" );
+				});	
+
+			</script>
+		<img id="redball"src="redball.jpg"/>
+	</body>
+</html>
